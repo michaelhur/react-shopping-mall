@@ -1570,6 +1570,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"consola@npm:^2.15.3":
+  version: 2.15.3
+  resolution: "consola@npm:2.15.3"
+  checksum: 8ef7a09b703ec67ac5c389a372a33b6dc97eda6c9876443a60d76a3076eea0259e7f67a4e54fd5a52f97df73690822d090cf8b7e102b5761348afef7c6d03e28
+  languageName: node
+  linkType: hard
+
 "console-control-strings@npm:^1.1.0":
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0"
@@ -2102,7 +2109,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.9":
+"fast-glob@npm:^3.2.7, fast-glob@npm:^3.2.9":
   version: 3.2.12
   resolution: "fast-glob@npm:3.2.12"
   dependencies:
@@ -3517,6 +3524,7 @@ __metadata:
     recoil: ^0.7.6
     typescript: ^4.9.3
     vite: ^4.1.0
+    vite-plugin-next-react-router: ^0.6.2
     vite-plugin-svgr: ^2.4.0
   languageName: unknown
   linkType: soft
@@ -4123,6 +4131,19 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
+  languageName: node
+  linkType: hard
+
+"vite-plugin-next-react-router@npm:^0.6.2":
+  version: 0.6.2
+  resolution: "vite-plugin-next-react-router@npm:0.6.2"
+  dependencies:
+    consola: ^2.15.3
+    fast-glob: ^3.2.7
+  peerDependencies:
+    react-router-dom: ">=6"
+    vite: ">=2"
+  checksum: 5c79a83c2cdfdcdefe23003d27b1692ece798e24e84effc210404a88345e4b2d8c585bb09ce1331b1109fb8ce3b41d0e6be5b842b70255fda934ae6240b5603b
   languageName: node
   linkType: hard
 
