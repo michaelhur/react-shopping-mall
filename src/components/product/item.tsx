@@ -13,7 +13,8 @@ const ProductItem = ({ category, description, id, image, price, rating, title }:
 
 export default ProductItem;
 
-const StyledProductItem = styled.li`
+export const StyledProductItem = styled.li`
+    list-style: none;
     border: 1px solid #000000;
     padding: 10px;
 
