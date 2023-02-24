@@ -24,7 +24,7 @@ export const fetcher = async ({
     params?: AnyOBJ;
 }) => {
     try {
-        const url = `${BASE_URL}/path`;
+        const url = `${BASE_URL}${path}`;
         const fetchOptions: RequestInit = {
             method,
             headers: {
