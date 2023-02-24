@@ -19,7 +19,12 @@ const ProductDetailPage = () => {
 
     if (!data) return null;
 
-    return <ProductDetail item={data} />;
+    return (
+        <>
+            <h2>제품 상세 정보</h2>
+            <ProductDetail item={data} />
+        </>
+    );
 };
 
 export default ProductDetailPage;
