@@ -3,8 +3,9 @@ import { fetcher, QueryKeys } from '../../queryClient';
 import { useQuery } from '@tanstack/react-query';
 import { Product } from '../../types/types';
 import { StyledProductItem } from '../../components/product/item';
+import ProductDetail from '../../components/product/detail';
 
-const ProductDetail = () => {
+const ProductDetailPage = () => {
     const { id } = useParams();
 
     const { data } = useQuery<Product>([QueryKeys.PRODUCTS, id], () =>
@@ -18,18 +19,7 @@ const ProductDetail = () => {
 
     if (!data) return null;
 
-    const { category, title, description, image, price, rating } = data;
-
-    return (
-        <StyledProductItem>
-            <p>{category}</p>
-            <p>{title}</p>
-            <img src={image} alt="Product Image" />
-            <span>{description}</span>
-            <span>${price}</span>
-            <span>{rating.rate}</span>
-        </StyledProductItem>
-    );
+    return <ProductDetail item={data} />;
 };
 
-export default ProductDetail;
+export default ProductDetailPage;
